@@ -1,0 +1,14 @@
+{
+  "name": "pravo-agency",
+  "version": "1.0.0",
+  "description": "test project for deco.agency ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "https://github.com/yuchiko",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
