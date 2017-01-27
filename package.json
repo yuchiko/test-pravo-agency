@@ -8,7 +8,16 @@
   },
   "author": "https://github.com/yuchiko",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuchiko/test-pravo-agency"
+  },
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "browser-sync": "^2.11.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1"
   }
 }
