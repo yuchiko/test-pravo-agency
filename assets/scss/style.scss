@@ -1,10 +1,10 @@
 /*!
  * -------------------------------------
- * Theme Name: ______
- * Theme URI: http://decollete.com.ua/
- * Author: Decollete Team
- * Author URI: http://decollete.com.ua/
- * Description: Custom wp theme special for _____
+ * Theme Name: Pravo Agency
+ * Theme URI: https://github.com/yuchiko/test-pravo-agency
+ * Author: Yuriy Byts
+ * Author URI: https://github.com/yuchiko/
+ * Description: Custom wp theme special for Pravo Agency
  * Version: 1.0
  * -------------------------------------
  */
@@ -14,7 +14,7 @@
 @import "base/_mixin";		// миксины
 @import "base/_fonts";		// шрифты
 @import "base/_variables";	// переменные
-@import "base/extend";		// расширения
+@import "base/_extend";		// расширения
 @import "base/_function";	// функции
 @import "base/_sprite";		// спрайт
 @import "base/_reset";		//
@@ -22,13 +22,13 @@
 
 
 //	Style
-@import "btnsIcons";	    // кнопки, иконки
-@import "some";			    // стили основные-всякие
-@import "header";		    // стили шапки
-@import "footer";		    // стили футера
-@import "sidebar";		    // стили виджетов сайдбара
-@import "excerpt";			// post excerpts
-@import "post";				// стили поста
+@import "_some";			// стили основные-всякие
+@import "_btnsIcons";	    // кнопки, иконки
+@import "_header";		    // стили шапки
+@import "_footer";		    // стили футера
+@import "_sidebar";		    // стили виджетов сайдбара
+@import "_excerpt";			// post excerpts
+@import "_post";            // стили поста
 
 @import "adaptive";			// стили адаптивки
 
