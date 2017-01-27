@@ -17,15 +17,6 @@ $secondary_font: '';
 $font-size-base:            10; // normalize font-size for body in 'px'
 $font-size-rem:             precision-round((10 / $font-size-base),3); // convert base px to rm
 
-// $font-size-text:            $font-size-rem
-// $font-size-h1:              precision-round(($font-size-base * 3),3);
-// $font-size-h2:              precision-round(($font-size-base * 2.6),3);
-// $font-size-h3:              precision-round(($font-size-base * 1.7),3);
-// $font-size-h4:              precision-round(($font-size-base * 1.25),3);
-// $font-size-h5:              $font-size-base;
-// $font-size-h6:              precision-round(($font-size-base * 0.85),3);
-
-
 // Breakpoints
 
 $grid-xs-max:   575px;
@@ -36,3 +27,5 @@ $grid-md-max:   991px;
 $grid-lg-min:   992px;
 $grid-lg-max:   1199px;
 $grid-xl-min:   1200px;
+
+$time: 0.3s;

@@ -29,12 +29,12 @@
 //----------------центрирование-----------------------
 %vam{
 	top: 50%;
-	@include transform(translateY(-50%));
+	transform: translateY(-50%);
 }
 
 %ham{
 	left: 50%;
-	@include transform(translateX(-50%));
+	transform: translateX(-50%);
 }
 
 %cam{
@@ -42,13 +42,13 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	@include transform(translate(-50%, -50%));
+	transform: translate(-50%, -50%);
 }
 //----------------------
 %hov-opacity{
-	@include transition(all $time);
+	transition: all $time;
 	&:hover{
-		@include opacity(.8);
+		opacity: .8;
 	}
 }
 //----------------------
@@ -58,10 +58,10 @@
 	position: relative;
 	text-align: center;
 	cursor: pointer;
-	@include box-sizing(border-box);
-	@include transition(all $time);
+	box-sizing: border-box;
+	transition: all $time;
 	&:active {
-		@include box-shadow( inset 0 0 4px rgba(0,0,0,.4));
+		box-shadow: inset 0 0 4px rgba(0,0,0,.4);
 	}
 }
 
@@ -75,14 +75,14 @@
 %anim_hide {
 	margin-top: 30px;
 	visibility: hidden;
-	@include opacity(0);
-	@include transition(margin $time ease,visibility $time ease,opacity $time ease);
+	opacity: 0;
+	transition: margin $time ease,visibility $time ease,opacity $time ease;
 }
 
 %anim_show {
 	margin-top: 0;
 	visibility: visible;
-	@include opacity(1);
+	opacity: 1;
 }
 
 
