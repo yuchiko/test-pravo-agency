@@ -1,0 +1,11 @@
+.welcome {
+  background: url(assets/img/home-screen.jpg);
+  background-size: 124rem auto;
+  height: 67rem;
+
+  &__content {
+    position: absolute;
+    width: 37%;
+    bottom: 0;
+  }
+}

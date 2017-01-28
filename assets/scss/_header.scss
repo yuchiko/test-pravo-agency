@@ -1,0 +1,32 @@
+.header {
+  position: absolute;
+  top: 2rem;
+  width:100%;
+
+  &__nav {
+    float: right;
+  }
+
+  &__menu, &__lang-choose {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__menu > li {
+    display: inline-block;
+    padding: 0 1.7rem;
+  }
+
+  &__menu > li a {
+    font-size: 1.175rem;
+    line-height: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $primary_color;
+
+    &:hover {
+      color: $secondary_color;
+    }
+  }
+
+}

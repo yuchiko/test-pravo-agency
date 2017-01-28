@@ -1,3 +1,59 @@
-.wrap{
+h2 {
+	font-weight: 600;
+	font-size: 3rem;
+	line-height: 3.5rem;
+	color: $dark_color;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-weight: 600;
+	font-size: 2.8rem;
+	line-height: 3rem;
+	color: $primary_color;
+	text-transform: uppercase;
+}
+
+p {
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 2.4rem;
+	margin-bottom: 2rem;
+}
+
+strong, b, .strong {
+	font-weight: 600;
+}
+
+.wrap {
+	display: block;
+	max-width: 124rem;
 	margin: 0 auto;
+	position: relative;
+	padding-left: 6rem;
+	padding-right: 6rem;
+
+	&--full-height {
+		height: 100%;
+	}
+
+	&--left {
+		margin-left: 6rem;
+	}
+
+}
+
+.heading {
+
+	&--underline {
+
+		&:after {
+			content: '';
+			display: block;
+			width: 4rem;
+			height: 0.2rem;
+			margin: 1rem 0;
+			background-color: $secondary_color;
+		}
+	}
 }

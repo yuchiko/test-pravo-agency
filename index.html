@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-	<meta charset="UTF-8">
-	<title>Decollete front Start</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Decollete front Start</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-
+<body class="home">
 
 <header id="header" class="header">
+    <div class="wrap wrap--left">
+        <a class="header__logo" href="/"><img src="assets/img/svg/logo.svg" alt="pravo agency logo" scale="0"/></a>
 
-	<a href="/"><img src="assets/img/logo.png" alt="" /></a>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a href="#services">Услуги и цены</a></li>
+                <li><a href="#testimonials">Отзывы</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
 
+            <div class="header__lang-choose selectric--lang">
+                <select class="js_select">
+                    <option value="ru">Ru</option>
+                    <option value="En">En</option>
+                    <option value="Ua">Ua</option>
+                </select>
+            </div>
+        </nav>
+    </div>
 </header>
 
 
-
-
-
-<main id="container" class="container">
-
-	<a href="main.html" target="_blank">Home</a>
-
+<main id="main" role="main">
+    <section class="section section--welcome welcome">
+        <div class="wrap wrap--full-height wrap--left">
+            <div class="welcome__content">
+                <h2 class="heading heading--underline">Правовое сопровождение малого ИТ-бизнеса</h2>
+                <p>Зачастую интернет-проекты, разработчики, маркетологи,
+                    дизайнеры, стартаперы и другие IT-специалисты не
+                    уделяют должного внимания правовым аспектам своей деятельности.</p>
+                    <p>Но <strong>документы должны быть в порядке</strong>, и мы в этом поможем.</p>
+                <a class="btn btn--icon" href="#services">Услуги и цены</a>
+            </div>
+        </div>
+    </section>
 </main>
-
-
-
-
-
 
 
 <footer id="footer" class="footer">
 
-	<a href="http://www.decollete.com.ua/">Team Decollete</a>
-
 </footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="assets/js/jquery.selectric.js"></script>
+<script src="assets/js/include.js"></script>
 </body>
 </html>

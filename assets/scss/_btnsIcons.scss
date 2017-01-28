@@ -1,5 +1,14 @@
 .btn {
 	@extend %btn;
+	background: $secondary_color;
+	color: #fff;
+	font-size: 1.1rem;
+	line-height: 3rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	padding: 1rem 4.15rem;
+	border-radius: 9.39rem;
+	margin-bottom: 2rem;
 }
 
 
