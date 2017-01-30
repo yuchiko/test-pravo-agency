@@ -41,7 +41,37 @@ strong, b, .strong {
 		margin-left: 6rem;
 	}
 
+	&--flex {
+		display: flex;
+	}
+
 }
+
+ul {
+	li {
+		position: relative;
+		padding-left: 1.8rem;
+	}
+}
+
+.list {
+	&--with-icon li {
+
+		&:before {
+			content: '';
+			@include absolute-list-circle(.7rem);
+			left: 0;
+			border: 0.2rem solid $secondary_color;
+			box-sizing: border-box;
+		}
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+@include hover-svg-in-block('service');
 
 .heading {
 
@@ -55,5 +85,20 @@ strong, b, .strong {
 			margin: 1rem 0;
 			background-color: $secondary_color;
 		}
+	}
+
+	&--center {
+
+		&:after {
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+}
+
+.section {
+
+	&__header {
+		margin: 5em 0;
 	}
 }

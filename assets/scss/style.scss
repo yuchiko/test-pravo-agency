@@ -31,7 +31,11 @@
 @import "_post";            // стили поста
 @import "_libs";            // стили библиотек/плагинов
 
-@import "partials/welcome";
+@import "partials/_welcome";
+@import "partials/_services";
+@import "partials/_service";
+@import "partials/_testimonials";
+
 
 @import "adaptive";			// стили адаптивки
 

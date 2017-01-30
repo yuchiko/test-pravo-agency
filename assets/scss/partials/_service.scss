@@ -1,0 +1,28 @@
+.service {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: $primary_color;
+  cursor: pointer;
+
+  &__heading {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: $primary_color;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 0;
+    width: 4.2rem;
+  }
+
+  &--with-icon {
+    position: relative;
+    padding-left: 6rem;
+
+  }
+
+}

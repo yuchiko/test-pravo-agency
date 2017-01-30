@@ -9,6 +9,16 @@
 	}
 
 }
+
+@mixin absolute-list-circle($size) {
+	position: absolute;
+	border-radius: 50%;
+	width: $size;
+	height: $size;
+	top: $size / 2;
+	margin-top: $size / 4;
+}
+
 //-----------gradient---------------
 @mixin background-gradient($start-color, $end-color, $orientation) {
 	background: $start-color;
@@ -97,5 +107,26 @@
 		font-weight: $weight;
 		src: url(quote($path + ".eot"));
 		src: $src;
+	}
+}
+
+@mixin hover-svg-in-block($parent) {
+	.#{$parent} {
+		svg {
+			.svg__st, .svg__fl {
+				transition-duration: $time;
+				transition-timing-function: ease;
+				transition-property: stroke,fill;
+			}
+		}
+
+		&:not(:hover) svg {
+			.svg__st {
+				stroke: $light_color !important;
+			}
+			.svg__fl {
+				fill: $light_color !important;
+			}
+		}
 	}
 }
