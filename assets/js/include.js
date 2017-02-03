@@ -2,12 +2,14 @@ jQuery(document).ready(function($){
 
 	$('.js_select').selectric();
 
-	scrollToAnimation();
-
 	$(document).on('click', '.js_service__info', function (e){
 		serviceTooltip.call(e.currentTarget);
 	});
 
+});
+
+jQuery(window).load(function() {
+	scrollToAnimation();
 });
 
 function serviceTooltip() {
@@ -82,8 +84,9 @@ function scrollToAnimation() {
 			var target = $(this.hash);
 			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 			if (target.length) {
+				console.log(target.offset().top, $(target).css('margin-top'));
 				$('html, body').animate({
-					scrollTop: target.offset().top + $(target).css('margin-top')
+					scrollTop: target.offset().top
 				}, 1000);
 				return false;
 			}
