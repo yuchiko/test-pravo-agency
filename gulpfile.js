@@ -31,5 +31,5 @@ gulp.task('bs-reload', function () {
 gulp.task('default', ['css', 'browser-sync'], function () {
 	gulp.watch("./assets/scss/**/*.scss", ['css']);
 	gulp.watch("./*.html", ['bs-reload']);
-	gulp.watch("./assets/js/*/**.js", ['bs-reload']);
+	gulp.watch("./assets/js/*.js", ['bs-reload']);
 });
