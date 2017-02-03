@@ -28,20 +28,20 @@
     }
 
     &:before {
-      background: url('/assets/img/svg/quotes.svg');
+      background: url('assets/img/svg/quotes.svg');
     }
 
     &:after {
-      background: url('/assets/img/svg/quotes-active.svg');
+      background: url('assets/img/svg/quotes-active.svg');
       transform: scale(0);
     }
 
     &_video:before {
-      background: url('/assets/img/svg/video.svg');
+      background: url('assets/img/svg/video.svg');
     }
 
     &_video:after {
-      background: url('/assets/img/svg/video-active.svg');
+      background: url('assets/img/svg/video-active.svg');
       transform: scale(0);
     }
 
