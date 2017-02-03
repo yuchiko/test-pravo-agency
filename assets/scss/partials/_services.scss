@@ -14,9 +14,57 @@
 
   &__block {
     width: 50%;
+
+    &:first-child {
+      padding-right: 4rem;
+    }
+
+    &.js_active {
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 0.1rem;
+        height: 100%;
+        background: $secondary_color;
+      }
+
+      &:first-child:before {
+        right: 0;
+      }
+
+      &:last-child:before {
+        left: -8rem;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 1rem;
+        width: 1rem;
+        height: 1rem;
+        color: #a70c5d;
+        background: #fff;
+        border: 0.1rem solid;
+        transform: rotate(45deg);
+        box-sizing: border-box;
+      }
+
+      &:first-child:after {
+        right: -0.5rem;
+        border-right-color: transparent;
+        border-top-color: transparent;
+      }
+
+      &:last-child:after {
+        left: -8.5rem;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+      }
+
+    }
+
   }
 
-  &__block {
-
-  }
 }

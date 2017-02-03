@@ -3,14 +3,43 @@
   line-height: 2rem;
   color: $primary_color;
   cursor: pointer;
+  margin-left: 8rem;
 
   &__heading {
+    position: relative;
     font-size: 1.5rem;
     line-height: 2rem;
     color: $primary_color;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 2rem;
+
+    &:before {
+      content: '';
+      @extend %ibt;
+      float: right;
+      background: url(/assets/img/svg/info.svg) no-repeat center;
+      background-size: 1.4rem 1.4rem;
+      border: 0.2rem solid $secondary_color_darker;
+      width: 3.2rem;
+      height: 3.2rem;
+      margin: 0 1rem 0 3rem;
+      border-radius: 50%;
+      box-sizing: border-box;
+
+      transition-duration: $time;
+      transition-timing-function: ease;
+      transition-property: background-color;
+    }
+  }
+
+  &:hover &__heading {
+    &:before {
+      color: $color_white;
+      background: url(/assets/img/svg/info-active.svg) no-repeat center;
+      background-size: 1.4rem 1.4rem;
+      background-color: $secondary_color;
+    }
   }
 
   &__icon {
@@ -22,7 +51,19 @@
   &--with-icon {
     position: relative;
     padding-left: 6rem;
-
   }
 
+  &__info {
+    position: absolute;
+    top:0;
+    opacity: 0;
+    background: $color_white;
+    padding: 20px;
+
+    transition-duration: $time;
+    transition-timing-function: ease;
+    transition-property: opacity;
+
+    z-index: -1;
+  }
 }
