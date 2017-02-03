@@ -355,24 +355,24 @@
                 <form method="POST" name="contact-form">
                     <div class="col-1-2">
                         <div class="input__group">
-                            <input type="text" name="name" class="inp inp--required" placeholder="Имя*" autocomplete="off">
+                            <input type="text" name="name" required placeholder="Имя*" autocomplete="off">
                             <span class="input__underline"></span>
                         </div>
                         <div class="input__group">
-                            <input type="tel" name="tel" class="inp inp--required" placeholder="Телефон*" autocomplete="off">
+                            <input type="tel" name="tel" required placeholder="Телефон*" autocomplete="off">
                             <span class="input__underline"></span>
                         </div>
                         <div class="input__group">
-                            <input type="email" name="email" class="inp inp--required" placeholder="E-mail*">
+                            <input type="email" name="email" required placeholder="E-mail*">
                             <span class="input__underline"></span>
                         </div>
                         <div class="input__group">
-                            <input type="text" name="site" class="inp" placeholder="Site">
+                            <input type="text" name="site" placeholder="Site">
                             <span class="input__underline"></span>
                         </div>
                         <div class="selectric--form">
                             <select class="js_select">
-                                <option value="none">МЕНЯ ИНТЕРЕСУЕТ</option>
+                                <option value="none" disabled selected>МЕНЯ ИНТЕРЕСУЕТ</option>
                                 <option value="change">Наведение порядка в делах</option>
                                 <option value="assistance">Правовое сопровождение деятельности</option>
                                 <option value="optimize">Оптимизация договорных отношений</option>
@@ -384,11 +384,19 @@
                     <div class="col-1-2">
                         <div class="form__textarea">
                             <p>Дополнительная информация</p>
-                            <textarea class="textarea" name="message" placeholder=" Введите текст ..." style="overflow: hidden; word-wrap: break-word; height: 100px;"></textarea>
+                            <div class="textarea__group">
+                                <textarea class="textarea" name="message" placeholder=" Введите текст ..."></textarea>
+                                <div class="textarea__underline">
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="text-center">
+                    <div class="contacts__submit text-center">
                         <button class="btn" type="submit">Отправить</button>
                     </div>
                 </form>
