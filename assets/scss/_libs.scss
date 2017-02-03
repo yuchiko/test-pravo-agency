@@ -195,6 +195,10 @@ $selectric-inner-height:    $selectric-height - ($selectric-border-width * 2) !d
       color: #444;
     }
 
+    &.disabled {
+      display: none;
+    }
+
     &.highlighted {
       background: #D0D0D0;
       color: #444;
