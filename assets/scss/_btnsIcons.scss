@@ -9,6 +9,56 @@
 	padding: 1rem 4.15rem;
 	border-radius: 9.39rem;
 	margin-bottom: 2rem;
+
+	&--text {
+		@extend %btn;
+		background: none;
+		border: none;
+	}
+
+	&--icon {
+		text-transform: uppercase;
+		font-size: 1.1rem;
+		font-weight: 900;
+
+		svg {
+			@extend %btn;
+			width: 2.3rem;
+			margin-right: 1rem;
+		}
+	}
+
+	&--loadmore:hover {
+		svg {
+			animation: 1.8s spin .6s linear infinite;
+		}
+	}
 }
 
+.loadmore__icon {
+	.st0 {
+		fill: none;
+		stroke: #a70c5d;
+		stroke-width: 3;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+		stroke-miterlimit: 10;
+	}
 
+	.st1 {
+		fill: none;
+		stroke: #a70c5d;
+		stroke-width: 3;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+	}
+
+	.st2 {
+		fill: #a70c5d;
+	}
+}
+
+@keyframes spin {
+	from {transform:rotate(0deg);}
+	to {transform:rotate(360deg);}
+}

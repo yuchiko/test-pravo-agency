@@ -3,8 +3,10 @@
 // Colors
 
 $bgcolor:                   #ffffff;
+$color_white:               #ffffff;
 $primary_color:             #3f4147;
 $secondary_color:           #a70c5d;
+$secondary_color_darker:    #9f2865;
 $light_color:               #9a9a9a;
 $dark_color:                #454545;
 $border_color:              #f4f4f4;
@@ -15,8 +17,7 @@ $border_color:              #f4f4f4;
 $primary_font: 'GothamPro';
 $secondary_font: '';
 
-$font-size-base:            10; // normalize font-size for body in 'px'
-$font-size-rem:             precision-round((10 / $font-size-base),3); // convert base px to rm
+$font-size-base:            0.625rem;
 
 // Breakpoints
 

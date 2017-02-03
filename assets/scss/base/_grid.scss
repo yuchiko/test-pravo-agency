@@ -1,11 +1,26 @@
 //	Grid
 
-.grid-row {
-	@extend %table;
+$total-columns: 6;
+
+$col-widths: ();
+@for $i from 1 through $total-columns {
+	@for $j from 1 through $i {
+		$w: ($j/$i);
+
+		@if not index($col-widths, $w) {
+			.col-#{$j}-#{$i} {
+				width: $w * 100%;
+			}
+
+			$col-widths: append($col-widths, $w, comma);
+		}
+
+	}
 }
 
-.grid-3,
-.grid-32 {
+
+[class*=" col-"], [class^=col-] {
 	@extend %ibt;
+	padding-right: 2rem;
+	padding-left: 2rem;
 }
-
