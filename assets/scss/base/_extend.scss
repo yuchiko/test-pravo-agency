@@ -60,6 +60,7 @@
 	cursor: pointer;
 	box-sizing: border-box;
 	transition: all $time;
+	text-decoration: none;
 	&:active {
 		box-shadow: inset 0 0 4px rgba(0,0,0,.4);
 	}
