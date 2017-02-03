@@ -1,0 +1,59 @@
+<section id="contacts" class="section section--contacts contacts">
+    <article>
+        <header class="section__header text-center">
+            <h3 class="heading heading--underline heading--center">запрос на услуги</h3>
+        </header>
+    </article>
+    <div class="contacts__container">
+        <div class="wrap wrap--form">
+            <form method="POST" name="contact-form">
+                <div class="col-1-2">
+                    <div class="input__group">
+                        <input type="text" name="name" required placeholder="Имя*" autocomplete="off">
+                        <span class="input__underline"></span>
+                    </div>
+                    <div class="input__group">
+                        <input type="tel" name="tel" required placeholder="Телефон*" autocomplete="off">
+                        <span class="input__underline"></span>
+                    </div>
+                    <div class="input__group">
+                        <input type="email" name="email" required placeholder="E-mail*">
+                        <span class="input__underline"></span>
+                    </div>
+                    <div class="input__group">
+                        <input type="text" name="site" placeholder="Site">
+                        <span class="input__underline"></span>
+                    </div>
+                    <div class="selectric--form">
+                        <select class="js_select">
+                            <option value="none" disabled selected>МЕНЯ ИНТЕРЕСУЕТ</option>
+                            <option value="change">Наведение порядка в делах</option>
+                            <option value="assistance">Правовое сопровождение деятельности</option>
+                            <option value="optimize">Оптимизация договорных отношений</option>
+                            <option value="create">Разработка договоров</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-1-2">
+                    <div class="form__textarea">
+                        <p>Дополнительная информация</p>
+                        <div class="textarea__group">
+                            <textarea class="textarea" name="message" placeholder=" Введите текст ..."></textarea>
+                            <div class="textarea__underline">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contacts__submit text-center">
+                    <button class="btn" type="submit">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
