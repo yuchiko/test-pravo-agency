@@ -1,0 +1,107 @@
+.footer {
+  padding: 3rem 0;
+
+  &__site-name {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  &__contacts {
+    font-size: 1.8rem;
+    line-height: 3rem;
+
+    span {
+      display: block;
+    }
+  }
+
+  &__copyright {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+
+  &__social {
+    margin-top: 2rem;
+  }
+
+}
+
+.social {
+
+  &__link {
+    display: inline-block;
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    border: 0.1rem solid $color_gray;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &:hover {
+      border-color: #3b5998;
+
+      .social__icon {
+
+        &:before {
+          transform: translateY(250%);
+        }
+
+        &:after {
+          transform: translateY(0%);
+        }
+      }
+    }
+
+    &_tw:hover {
+      border-color: #00aced;
+    }
+
+    &_in:hover {
+      border-color: #007bb6;
+    }
+  }
+
+  &__icon {
+    &:before, &:after{
+      content: '';
+      position: absolute;
+      background: url(assets/img/svg/facebook.svg) no-repeat center;
+      width: $social_icon_size;
+      height: $social_icon_size;
+      top: -$social_icon_size / 2;
+      left: -$social_icon_size / 2;
+      transform: translateY(0%);
+      transition-duration: $time;
+      transition-timing-function: ease;
+      transition-property: transform;
+    }
+
+    &:after {
+      background: url(assets/img/svg/facebook-active.svg) no-repeat center;
+      transform: translateY(-250%);
+    }
+
+    &_tw:before {
+      background: url(assets/img/svg/twitter.svg) no-repeat center;
+    }
+
+    &_tw:after {
+      background: url(assets/img/svg/twitter-active.svg) no-repeat center;
+    }
+
+    &_in:before {
+      background: url(assets/img/svg/linkedin.svg) no-repeat center;
+    }
+
+    &_in:after {
+      background: url(assets/img/svg/linkedin-active.svg) no-repeat center;
+    }
+
+  }
+
+
+}
