@@ -4,10 +4,12 @@
 	 viewBox="0 0 4 10" style="enable-background:new 0 0 4 10;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;}
-	.st1{fill:#FFFFFF;}
-	.st2{font-family:'BanderaPro-Bold';}
-	.st3{font-size:12px;}
+	.st1{enable-background:new    ;}
+	.st2{fill:#FFFFFF;}
 </style>
 <rect x="0.1" y="0.3" class="st0" width="3.8" height="9.4"/>
-<text transform="matrix(1 0 0 1 8.333588e-02 9.3125)" class="st1 st2 st3">i</text>
+<g class="st1">
+	<path class="st2" d="M0.5,9.3L0.4,8.1L1.1,8V4.6L0.5,4.6l0.1-1.2h2.3v4.8l0.7,0L3.5,9.3H0.5z M2,2.4C1.4,2.4,1,2,1,1.5
+		C1,1,1.3,0.6,2,0.6c0.7,0,1,0.4,1,0.9C3,2.1,2.6,2.4,2,2.4z"/>
+</g>
 </svg>
