@@ -41,7 +41,7 @@
 
     .svg__fl:not(.svg__no-st) {
       fill: #fff;
-      animation: dash 6s linear forwards, fill 1s linear;
+      animation: dash 6s linear forwards, fill 1s linear forwards;
     }
 
     &__heading {

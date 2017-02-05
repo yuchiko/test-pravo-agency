@@ -114,7 +114,7 @@
 	.#{$parent} {
 		svg {
 			line, polygon, rect, polyline, path, circle, ellipse {
-				transition-duration: $time;
+				transition-duration: $time, 5s;
 				transition-timing-function: ease;
 				transition-property: stroke,fill;
 			}
