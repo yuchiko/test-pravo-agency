@@ -50,6 +50,7 @@
 }
 
 .svg {
+
 	&--document {
 		fill: none;
 		stroke: #a70c5d;
@@ -74,9 +75,22 @@
 		stroke-width: 0.75;
 		stroke-miterlimit: 10;
 	}
+
 }
 
 @keyframes spin {
 	from {transform:rotate(0deg);}
 	to {transform:rotate(360deg);}
+}
+
+@keyframes dash {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes fill {
+	to {
+		fill: $secondary_color;
+	}
 }

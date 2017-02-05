@@ -31,12 +31,27 @@
     }
   }
 
-  &:hover &__heading {
-    &:before {
-      color: $color_white;
-      background: url('assets/img/svg/info-active.svg') no-repeat center;
-      background-size: 1.4rem 1.4rem;
-      background-color: $secondary_color;
+  &:hover {
+
+    svg {
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: dash 6s linear forwards;
+    }
+
+    .svg__fl {
+      fill: #fff;
+      animation: dash 6s linear forwards, fill 1s linear;
+    }
+
+    &__heading {
+
+      &:before {
+        color: $color_white;
+        background: url('assets/img/svg/info-active.svg') no-repeat center;
+        background-size: 1.4rem 1.4rem;
+        background-color: $secondary_color;
+      }
     }
   }
 
@@ -65,3 +80,5 @@
     z-index: -1;
   }
 }
+
+@include hover-svg-in-block('service');
