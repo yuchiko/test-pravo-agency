@@ -9,7 +9,7 @@
     margin-right: 2rem;
   }
 
-  &__menu, &__lang-choose {
+  &__menu, &__lang {
     display: inline-block;
     vertical-align: middle;
   }
@@ -30,6 +30,100 @@
     &:hover {
       color: $secondary_color;
     }
+  }
+
+  &__lang {
+    margin-left: 10rem;
+  }
+
+}
+
+.lang {
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &__link {
+    @extend %ibm;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+  }
+
+  & > &__link {
+    border: 0.2rem solid #dfdfe2;
+    border-radius: 2.5rem;
+
+    transition-duration: $time;
+    transition-timing-function: ease;
+    transition-property: border;
+
+    &:before {
+      content: '';
+      @extend %ibm;
+      width: 1.8rem;
+      height: 1.8rem;
+      background: #dfdfe2;
+      border-radius: 50%;
+      margin-right: 1rem;
+
+      transition-duration: $time;
+      transition-timing-function: ease;
+      transition-property: background;
+    }
+
+  }
+
+  &:hover > &__link {
+    border-color: $secondary_color;
+
+    &:before {
+      background: $secondary_color;
+    }
+
+  }
+
+  &__list {
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+
+    transition-duration: $time;
+    transition-timing-function: ease;
+    transition-property: opacity;
+
+    .lang__item {
+      position: relative;
+      top: 0;
+      right: 0;
+
+      transition-duration: $time;
+      transition-timing-function: ease;
+      transition-property: transform;
+      transform: translateZ(0);
+
+      &:nth-child(1){
+        transform: translateY(0%);
+      }
+
+      &:nth-child(2) {
+        transform: translateY(-100%);
+      }
+    }
+
+  }
+
+  &:hover &__list {
+    visibility: visible;
+    opacity: 1;
+
+    .lang__item {
+      transform: translateY(0);
+    }
+
   }
 
 }

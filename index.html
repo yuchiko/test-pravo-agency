@@ -18,12 +18,12 @@
                 <li><a href="#contacts">Контакты</a></li>
             </ul>
 
-            <div class="header__lang-choose selectric--lang">
-                <select class="js_select">
-                    <option value="ru">Ru</option>
-                    <option value="En">En</option>
-                    <option value="Ua">Ua</option>
-                </select>
+            <div class="lang header__lang selectric--lang">
+                <a href="#" class="lang__link lang__item--current">ru</a>
+                <ul class="lang__list">
+                    <li class="lang__item"><a href="#" class="lang__link">en</a></li>
+                    <li class="lang__item"><a href="#" class="lang__link">ua</a></li>
+                </ul>
             </div>
         </nav>
     </div>
@@ -34,12 +34,25 @@
     <section class="section section--welcome welcome">
         <div class="wrap wrap--full-height wrap--left">
             <div class="welcome__content">
-                <h2 class="heading heading--underline">Правовое сопровождение малого ИТ-бизнеса</h2>
+                <h2 class="welcome__heading heading heading--underline">
+                    <span>Правовое</span>
+                    <span>сопровождение</span>
+                    <span>малого ИТ-бизнеса</span>
+                </h2>
                 <p>Зачастую интернет-проекты, разработчики, маркетологи,
                     дизайнеры, стартаперы и другие IT-специалисты не
                     уделяют должного внимания правовым аспектам своей деятельности.</p>
                 <p>Но <strong>документы должны быть в порядке</strong>, и мы в этом поможем.</p>
-                <a href="#services" class="btn btn--icon">Услуги и цены</a>
+                <a href="#services" class="btn btn--icon">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 38 38" style="enable-background:new 0 0 38 38;" xml:space="preserve">
+                        <g>
+                            <line fill="none" stroke="#fff" stroke-width="3" x1="18.9" y1="13.3" x2="18.9" y2="23.5"/>
+                            <polyline fill="none" stroke="#fff" stroke-width="3" points="22.9,20.1 18.9,24.2 14.7,20 	"/>
+                        </g>
+                        <circle fill="none" stroke="#fff" stroke-width="3" class="ad__st1" cx="18.9" cy="19" r="17.1"/>
+                    </svg>
+                    Услуги и цены</a>
             </div>
         </div>
     </section>
