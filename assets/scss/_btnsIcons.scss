@@ -49,6 +49,33 @@
 	}
 }
 
+.svg {
+	&--document {
+		fill: none;
+		stroke: #a70c5d;
+		stroke-width: 0.6901;
+		stroke-miterlimit: 10;
+	}
+	&--target {
+		fill: #a70c5d;
+		stroke: #a70c5d;
+		stroke-width: 0.2;
+		stroke-miterlimit: 10;
+	}
+	&--notepad {
+		fill: none;
+		stroke: $secondary_color;
+		stroke-width: 0.75;
+		stroke-miterlimit: 10;
+	}
+	&--court {
+		fill: none;
+		stroke: #a70c5d;
+		stroke-width: 0.75;
+		stroke-miterlimit: 10;
+	}
+}
+
 @keyframes spin {
 	from {transform:rotate(0deg);}
 	to {transform:rotate(360deg);}

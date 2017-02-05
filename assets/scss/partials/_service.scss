@@ -27,9 +27,7 @@
       border-radius: 50%;
       box-sizing: border-box;
 
-      transition-duration: $time;
-      transition-timing-function: ease;
-      transition-property: background-color;
+      @include animation(background-color);
     }
   }
 
