@@ -37,25 +37,15 @@
 }
 
 .loadmore__icon {
-	.st0 {
-		fill: none;
-		stroke: #a70c5d;
-		stroke-width: 3;
-		stroke-linecap: round;
-		stroke-linejoin: round;
-		stroke-miterlimit: 10;
-	}
+	fill: none;
+	stroke: $secondary_color;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
 
-	.st1 {
-		fill: none;
-		stroke: #a70c5d;
-		stroke-width: 3;
-		stroke-linecap: round;
-		stroke-linejoin: round;
-	}
-
-	.st2 {
-		fill: #a70c5d;
+	polygon {
+		fill: $secondary_color;
 	}
 }
 
