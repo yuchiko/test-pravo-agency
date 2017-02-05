@@ -1,8 +1,18 @@
 .header {
+  width:100%;
   position: absolute;
   top: 2rem;
-  width:100%;
   z-index: 2;
+
+  &__logo {
+    width: 10%;
+    min-width: 11rem;
+    @extend %ibm;
+
+    img {
+      width: 100%;
+    }
+  }
 
   &__nav {
     float: right;

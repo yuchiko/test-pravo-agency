@@ -120,14 +120,14 @@
         background-color: #dcdcdc;
         transition-duration: $time;
         transition-timing-function: ease;
-        transition-property: width,height
+        transition-property: width,height;
       }
 
       &:nth-of-type(1) {
         height: .1rem;
         width: 100%;
         top: 0;
-        left: 0
+        left: 0;
       }
 
       &:nth-of-type(1):before {
@@ -135,14 +135,14 @@
         top: 0;
         left: 0;
         height: .125rem;
-        width: 0
+        width: 0;
       }
 
       &:nth-of-type(2) {
         width: .1rem;
         height: 100%;
         top: 0;
-        right: 0
+        right: 0;
       }
 
       &:nth-of-type(2):before {
@@ -150,14 +150,14 @@
         top: 0;
         right: 0;
         height: 0;
-        width: .125rem
+        width: .125rem;
       }
 
       &:nth-of-type(3) {
         height: .1rem;
         width: 100%;
         bottom: 0;
-        right: 0
+        right: 0;
       }
 
       &:nth-of-type(3):before {
@@ -165,14 +165,14 @@
         bottom: 0;
         right: 0;
         height: .125rem;
-        width: 0
+        width: 0;
       }
 
       &:nth-of-type(4) {
         width: .1rem;
         height: 100%;
         bottom: 0;
-        left: 0
+        left: .1rem;
       }
 
       &:nth-of-type(4):before {
@@ -180,7 +180,7 @@
         bottom: 0;
         left: 0;
         height: 0;
-        width: .125rem
+        width: .125rem;
       }
     }
 
