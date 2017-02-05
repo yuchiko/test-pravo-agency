@@ -10,8 +10,7 @@
   }
 
   &__menu, &__lang {
-    display: inline-block;
-    vertical-align: middle;
+    @extend %ibm;
   }
 
   &__menu > li {
@@ -55,9 +54,7 @@
     border: 0.2rem solid #dfdfe2;
     border-radius: 2.5rem;
 
-    transition-duration: $time;
-    transition-timing-function: ease;
-    transition-property: border;
+    @include animation(border);
 
     &:before {
       content: '';
@@ -68,9 +65,7 @@
       border-radius: 50%;
       margin-right: 1rem;
 
-      transition-duration: $time;
-      transition-timing-function: ease;
-      transition-property: background;
+      @include animation(background);
     }
 
   }
@@ -90,20 +85,14 @@
     right: 0;
     visibility: hidden;
     opacity: 0;
-
-    transition-duration: $time;
-    transition-timing-function: ease;
-    transition-property: opacity;
+    @include animation(opacity);
 
     .lang__item {
       position: relative;
       top: 0;
       right: 0;
-
-      transition-duration: $time;
-      transition-timing-function: ease;
-      transition-property: transform;
       transform: translateZ(0);
+      @include animation(transform);
 
       &:nth-child(1){
         transform: translateY(0%);

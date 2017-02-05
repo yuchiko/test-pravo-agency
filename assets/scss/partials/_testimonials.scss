@@ -22,9 +22,7 @@
       top: -2.7rem;
       overflow: hidden;
 
-      transition-duration: $time;
-      transition-timing-function: ease;
-      transition-property: transform;
+      @include animation(transform);
     }
 
     &:before {

@@ -113,7 +113,7 @@
 @mixin hover-svg-in-block($parent) {
 	.#{$parent} {
 		svg {
-			.svg__st, .svg__fl {
+			line, polygon, rect, polyline, path, circle, ellipse {
 				transition-duration: $time;
 				transition-timing-function: ease;
 				transition-property: stroke,fill;
@@ -121,11 +121,14 @@
 		}
 
 		&:not(:hover) svg {
-			.svg__st {
+			line, polygon, rect, polyline, path, circle, ellipse {
 				stroke: $light_color !important;
 			}
 			.svg__fl {
 				fill: $light_color !important;
+			}
+			.svg__no-st {
+				stroke: none !important;
 			}
 		}
 	}
@@ -136,4 +139,10 @@
 	&:-moz-placeholder           {@content}
 	&::-moz-placeholder          {@content}
 	&:-ms-input-placeholder      {@content}
+}
+
+@mixin animation($properies...) {
+	transition-duration: $time;
+	transition-timing-function: ease;
+	transition-property: $properies;
 }

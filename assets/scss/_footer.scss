@@ -74,10 +74,9 @@
       height: $social_icon_size;
       top: -$social_icon_size / 2;
       left: -$social_icon_size / 2;
-      transform: translateY(0%);
-      transition-duration: $time;
-      transition-timing-function: ease;
-      transition-property: transform;
+      transform: translateZ(0) translateY(0%);
+
+      @include animation(transform);
     }
 
     &:after {
