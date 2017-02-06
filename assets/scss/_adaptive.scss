@@ -60,7 +60,8 @@
       bottom: 0;
       left: 0;
       right: 0;
-      padding: inherit;
+      padding-left: inherit;
+      padding-right: inherit;
     }
   }
 
@@ -117,10 +118,14 @@
   }
 
   .welcome {
+    height: 100%;
+    min-height: 0;
 
     &__content {
+      position: relative;
       width: 100%;
       text-align: center;
+      padding-top: 13rem;
     }
   }
 
