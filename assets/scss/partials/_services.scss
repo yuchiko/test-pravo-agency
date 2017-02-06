@@ -1,21 +1,21 @@
 .services {
   &__row {
     border-top: 0.1rem dotted $border_color;
-    padding: 5rem 0;
   }
 
   &__row:first-child {
     border-top: 0.1rem solid $border_color;
   }
 
-  &__block {
-    width: 50%;
+  &__column {
+    padding: 5rem 0;
 
-    &:first-child {
-      padding-right: 4rem;
+    &:first-child .service {
+      padding-left: 15rem;
+      padding-right: 3.5rem;
     }
 
-    &.js_active {
+    & .js_active {
 
       &:before {
         content: '';
@@ -31,7 +31,7 @@
       }
 
       &:last-child:before {
-        left: -8rem;
+        left: 0;
       }
 
       &:after {
@@ -54,7 +54,7 @@
       }
 
       &:last-child:after {
-        left: -8.5rem;
+        left: -0.5rem;
         border-left-color: transparent;
         border-bottom-color: transparent;
       }

@@ -134,7 +134,7 @@
         background-color: $secondary_color;
         top: 0;
         left: 0;
-        height: .125rem;
+        height: .1rem;
         width: 0;
       }
 
@@ -150,7 +150,7 @@
         top: 0;
         right: 0;
         height: 0;
-        width: .125rem;
+        width: .1rem;
       }
 
       &:nth-of-type(3) {
@@ -164,7 +164,7 @@
         background-color: $secondary_color;
         bottom: 0;
         right: 0;
-        height: .125rem;
+        height: .1rem;
         width: 0;
       }
 
@@ -172,7 +172,7 @@
         width: .1rem;
         height: 100%;
         bottom: 0;
-        left: .1rem;
+        left: 0;
       }
 
       &:nth-of-type(4):before {
@@ -180,7 +180,7 @@
         bottom: 0;
         left: 0;
         height: 0;
-        width: .125rem;
+        width: .1rem;
       }
     }
 

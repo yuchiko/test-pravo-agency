@@ -3,3 +3,87 @@
     font-size: 0.699304vw;
   }
 }
+
+@media (max-width: $grid-lg-max) {
+
+  .services {
+
+    &__column {
+      padding-left: 2rem;
+      padding-right: 2rem;
+
+      &:first-child .service, .service {
+        padding-left: 7rem;
+        padding-right: 2rem;
+      }
+
+    }
+
+    .service__icon {
+      position: absolute;
+      margin-left: 0;
+      left: 0;
+      width: 4.2rem;
+    }
+
+  }
+
+}
+
+@media (max-width: $grid-md-max) {
+  .col-1-2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: $grid-sm-max) {
+
+  .wrap {
+
+    &--grid {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+
+}
+
+@media (max-width: $grid-xs-max) {
+  .services {
+
+    &__column {
+
+      &:first-child .service, .service {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+
+    }
+
+    .service {
+
+      &__icon {
+        position: relative;
+        float: left;
+        margin-right: 2rem;
+      }
+
+      & > &__text, & > .list {
+        display: block;
+        padding-right: 0rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $grid-xs-min) {
+  .services {
+
+    .service__icon {
+        position: relative;
+        float: none;
+        margin-right: 2rem;
+    }
+  }
+}

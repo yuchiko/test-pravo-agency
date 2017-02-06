@@ -1,9 +1,11 @@
 .service {
+  position: relative;
+  display: block;
   font-size: 1.3rem;
   line-height: 2rem;
   color: $primary_color;
   cursor: pointer;
-  margin-left: 8rem;
+  padding-left: 18.8rem;
 
   &__heading {
     position: relative;
@@ -23,7 +25,7 @@
       border: 0.2rem solid $secondary_color_darker;
       width: 3.2rem;
       height: 3.2rem;
-      margin: 0 1rem 0 3rem;
+      margin: 0 3rem 0 3rem;
       border-radius: 50%;
       box-sizing: border-box;
 
@@ -57,13 +59,8 @@
 
   &__icon {
     position: absolute;
-    left: 0;
+    margin-left: -7.1rem;
     width: 4.2rem;
-  }
-
-  &--with-icon {
-    position: relative;
-    padding-left: 6rem;
   }
 
   &__info {
@@ -78,6 +75,15 @@
     transition-property: opacity;
 
     z-index: -1;
+  }
+
+  & > &__text, & > .list {
+    display: block;
+    padding-right: 5rem;
+  }
+
+  .list.pad-r0 {
+    padding-right: 0;
   }
 }
 
