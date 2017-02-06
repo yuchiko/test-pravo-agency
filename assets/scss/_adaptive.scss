@@ -28,15 +28,79 @@
 
   }
 
+  .wrap--left {
+    padding-left: 6rem;
+  }
+
 }
 
 @media (max-width: $grid-md-max) {
+
   .col-1-2 {
     width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .col-1-3 {
+    width: 50%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .welcome {
+
+    .wrap {
+      background-position: 0 bottom;
+      background-size: auto;
+    }
+
+    &__content {
+      width: 80%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: inherit;
+    }
+  }
+
+  .contacts {
+
+    &__submit {
+      margin-top: 5rem;
+    }
   }
 }
 
 @media (max-width: $grid-sm-max) {
+
+  .col-1-3 {
+    width: 100%;
+  }
+
+  .testimonials {
+
+    &__block {
+      padding-left: 10rem;
+
+      & > p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      &:before, &:after {
+        top: 0rem;
+        left: 6rem;
+      }
+    }
+
+    &__author-image, &__meta {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 2rem;
+    }
+  }
 
   .wrap {
 
@@ -44,12 +108,36 @@
       padding-left: 0;
       padding-right: 0;
     }
+
+    &--left {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+  }
+
+  .welcome {
+
+    &__content {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .heading--underline:after {
+    margin-left: auto;
+    margin-right: auto;
   }
 
 
 }
 
 @media (max-width: $grid-xs-max) {
+
+  .col-1-3 {
+    width: 100%;
+  }
+
   .services {
 
     &__column {
@@ -72,6 +160,18 @@
       & > &__text, & > .list {
         display: block;
         padding-right: 0rem;
+      }
+    }
+  }
+
+  .testimonials {
+
+    &__block {
+      padding-left: 6rem;
+
+      &:before, &:after {
+        top: 0rem;
+        left: 2rem;
       }
     }
   }
