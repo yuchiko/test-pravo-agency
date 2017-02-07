@@ -133,7 +133,10 @@ var modalVideo = {
 	},
 	open: function (data_url) {
 		$(this.className).addClass(this.activeClass);
-		data_url = data_url.replace("watch?v=", "v/");
+
+		data_url = modalVideo.youtubeParser(data_url);
+		data_url = "http://www.youtube.com/embed/" + data_url + '?autoplay=1';
+
 		$(this.className).find('iframe').prop('src', data_url);
 	},
 	close: function () {
@@ -142,5 +145,10 @@ var modalVideo = {
 	},
 	toggle: function () {
 		$(this.className).hasClass(this.activeClass) ? this.close() : this.open();
+	},
+	youtubeParser: function(url){
+		var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
+		var match = url.match(regExp);
+		return (match&&match[7].length==11)? match[7] : false;
 	}
 };
