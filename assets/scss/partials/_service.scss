@@ -85,12 +85,12 @@
 
     &.s-left {
       right: -2rem;
-      transform: translateX(100%);
+      transform: translateX(100%) translateZ(0);
     }
 
     &.s-right {
       left: -2rem;
-      transform: translateX(-100%);
+      transform: translateX(-100%) translateZ(0);
     }
   }
 
