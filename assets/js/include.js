@@ -137,11 +137,11 @@ var modalVideo = {
 		data_url = modalVideo.youtubeParser(data_url);
 		data_url = "http://www.youtube.com/embed/" + data_url + '?autoplay=1';
 
-		$(this.className).find('iframe').prop('src', data_url);
+		$(this.className).find('iframe').attr('src', data_url);
 	},
 	close: function () {
 		$(this.className).removeClass(this.activeClass);
-		$(this.className).find('iframe').prop('src', '');
+		$(this.className).find('iframe').attr('src', '');
 	},
 	toggle: function () {
 		$(this.className).hasClass(this.activeClass) ? this.close() : this.open();
