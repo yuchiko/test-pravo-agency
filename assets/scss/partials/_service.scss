@@ -84,13 +84,54 @@
     }
 
     &.s-left {
-      right: 0rem;
+      right: -2rem;
       transform: translateX(100%);
     }
 
     &.s-right {
-      left: 0rem;
+      left: -2rem;
       transform: translateX(-100%);
+    }
+  }
+
+  .info {
+
+    &__heading {
+      font-size: 1rem;
+      line-height: 2rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: $primary_color;
+    }
+
+    &__row {
+      padding-bottom: 1rem;
+      padding-right: 7.4rem;
+    }
+
+    &__row:first-child .info__heading {
+      padding-top: 2rem;
+    }
+
+    &__btn {
+      padding: 0.8rem 3.3rem;
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+    }
+
+  }
+
+  // TODO: s-right and s-left (need design)
+  .info {
+
+    &__heading {
+      float: left;
+      width: 8rem;
+      margin-left: 1.4rem;
+
+      & + div {
+        overflow: hidden;
+      }
     }
   }
 

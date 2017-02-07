@@ -51,8 +51,6 @@ function serviceTooltip() {
 		block.position = 's-center';
 	}
 
-	console.log(block.position);
-
 	// clear classes and add current
 	block.tooltip.el.removeClass(block.helperClasses).addClass(block.position);
 	$thisEl.removeClass(block.helperClasses).addClass(block.position);

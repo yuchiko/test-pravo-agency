@@ -44,6 +44,13 @@
         }
       }
 
+      .info {
+
+        &__row {
+          padding-right: 1rem;
+        }
+      }
+
     }
 
     .service__icon {
@@ -157,6 +164,36 @@
     }
   }
 
+  .services {
+
+    &__column {
+      margin-top: 0;
+      margin-bottom: 0;
+      border-right: none!important;
+    }
+
+    .info {
+
+      &__heading {
+        float: none;
+        margin-left: 0;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+
+  .table {
+
+    &__cell {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__column {
+      display: inline-block;
+      vertical-align: bottom;
+    }
+  }
 }
 
 @media (max-width: $grid-sm-max) {

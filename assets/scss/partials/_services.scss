@@ -8,11 +8,15 @@
   }
 
   &__column {
-    padding: 5rem 0;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 
-    &:first-child .service {
-      padding-left: 15rem;
-      padding-right: 3.5rem;
+    &:first-child {
+      border-right: 1px dotted $color_gray;
+      & .service {
+        padding-left: 15rem;
+        padding-right: 3.5rem;
+      }
     }
 
     & .js_active {
@@ -28,11 +32,11 @@
       }
 
       &.s-left:before {
-        right: 0rem;
+        right: -2rem;
       }
 
       &.s-right:before {
-        left: 0rem;
+        left: -2rem;
       }
 
       &:not(.s-center):after {
@@ -50,13 +54,13 @@
       }
 
       &.s-left:after {
-        right: -0.5rem;
+        right: -2.5rem;
         border-right-color: transparent;
         border-top-color: transparent;
       }
 
       &.s-right:after {
-        left: -0.5rem;
+        left: -2.5rem;
         border-left-color: transparent;
         border-bottom-color: transparent;
       }

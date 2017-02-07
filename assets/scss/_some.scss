@@ -12,7 +12,7 @@ body {
 	color: $primary_color;
 }
 
-h2 {
+h2, .h2 {
 	font-weight: 600;
 	font-size: 3rem;
 	line-height: 3.5rem;
@@ -20,10 +20,18 @@ h2 {
 	text-transform: uppercase;
 }
 
-h3 {
+h3, .h3 {
 	font-weight: 600;
 	font-size: 2.8rem;
 	line-height: 3rem;
+	color: $primary_color;
+	text-transform: uppercase;
+}
+
+h4, .h4 {
+	font-weight: 600;
+	font-size: 1.5rem;
+	line-height: 2rem;
 	color: $primary_color;
 	text-transform: uppercase;
 }
@@ -39,6 +47,35 @@ a {
 
 strong, b, .strong {
 	font-weight: 600;
+}
+
+.table {
+	display: table;
+	width: 100%;
+
+	&__cell {
+		display: table-cell;
+		font-size: 1.1rem;
+		line-height: 2rem;
+	}
+
+	&__column {
+		margin-bottom: 1.7rem;
+	}
+
+	&__heading {
+		@extend strong;
+		font-size: 1.3rem;
+		line-height: 1;
+
+		span {
+			display: block;
+			font-size: 1.1rem;
+			line-height: 2rem;
+			font-weight: 400;
+		}
+	}
+
 }
 
 .wrap {
@@ -101,6 +138,15 @@ ul {
 .text-center {
 	text-align: center;
 }
+
+.text {
+
+	&--bigger {
+		font-size: 1.64em;
+	}
+}
+
+
 
 .heading {
 
