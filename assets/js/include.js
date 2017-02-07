@@ -84,7 +84,7 @@ function serviceTooltip() {
 }
 
 function scrollToAnimation() {
-	$('a[href*="#"]:not([href="#"])').click(function () {
+	$(document).on('click', 'a[href*="#"]:not([href="#"])', function () {
 		if ($(this).parents('.mobile-nav').length) { mobileNav.close(); }
 		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 			var target = $(this.hash);
