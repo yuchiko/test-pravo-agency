@@ -10,6 +10,15 @@ jQuery(document).ready(function ($) {
 		mobileNav.toggle();
 	});
 
+	$(document).keyup(function(a) // esc btn
+	{
+		if ((a.keyCode == 27) && ($(modalVideo.className).hasClass(modalVideo.activeClass))) {
+			modalVideo.close();
+		} else if ((a.keyCode == 27) && ($(mobileNav.className).hasClass(mobileNav.activeClass))) {
+			mobileNav.close();
+		}
+	});
+
 
 });
 
@@ -25,8 +34,9 @@ function serviceTooltip() {
 	var block = {
 		offsetX: $thisEl.offset().left,
 		width: $thisEl.outerWidth(),
-		parentWidth: $thisEl.parent().width(),
-		siblingOffsetX: $thisEl.siblings().offset().left,
+		parentWidth: $thisEl.parents('.wrap').width(),
+		siblingOffsetX: $thisEl.parent().siblings().offset().left,
+		helperClasses: 's-right s-left s-center',
 		tooltip: {
 			el: $thisEl.find('.service__info'),
 			isShow: !!(+$thisEl.find('.service__info').css('opacity'))
@@ -35,13 +45,17 @@ function serviceTooltip() {
 
 	hideAllTooltips();
 
-	block.position = (block.offsetX > block.parentWidth / 2) ? 'left' : 'right';
-	block.tooltip.el.css('width', block.parentWidth / 2);
-	if (block.position == 'right') {
-		block.tooltip.el.css(block.position, -block.parentWidth / 2);
+	if (!(block.width*2 > block.parentWidth)) {
+		block.position = (block.offsetX > block.parentWidth / 2) ? 's-right' : 's-left';
 	} else {
-		block.tooltip.el.css(block.position, -(block.parentWidth - block.width));
+		block.position = 's-center';
 	}
+
+	console.log(block.position);
+
+	// clear classes and add current
+	block.tooltip.el.removeClass(block.helperClasses).addClass(block.position);
+	$thisEl.removeClass(block.helperClasses).addClass(block.position);
 
 	triggerTooltip();
 

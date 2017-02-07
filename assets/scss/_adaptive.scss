@@ -7,14 +7,41 @@
 @media (max-width: $grid-lg-max) {
 
   .services {
+    $service_pad : 2;
 
     &__column {
-      padding-left: 2rem;
-      padding-right: 2rem;
+      padding-left: $service_pad + rem;
+      padding-right: $service_pad + rem;
 
       &:first-child .service, .service {
         padding-left: 7rem;
         padding-right: 2rem;
+      }
+
+      .service__info {
+
+        &.s-right {
+          left: - $service_pad + rem;
+        }
+        &.s-left {
+          right: - $service_pad + rem;
+        }
+      }
+
+      .js_active {
+
+        &.s-left:before {
+          right: - $service_pad + rem;
+        }
+        &.s-right:before {
+          left: - $service_pad + rem;
+        }
+        &.s-left:after {
+          right: - ($service_pad + 0.5) + rem;
+        }
+        &.s-right:after {
+          left: - ($service_pad + 0.5) + rem;
+        }
       }
 
     }

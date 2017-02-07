@@ -17,24 +17,25 @@
 
     & .js_active {
 
-      &:before {
+      &:not(.s-center):before {
         content: '';
         position: absolute;
         top: 0;
         width: 0.1rem;
         height: 100%;
         background: $secondary_color;
+        z-index: 3;
       }
 
-      &:first-child:before {
-        right: 0;
+      &.s-left:before {
+        right: 0rem;
       }
 
-      &:last-child:before {
-        left: 0;
+      &.s-right:before {
+        left: 0rem;
       }
 
-      &:after {
+      &:not(.s-center):after {
         content: '';
         position: absolute;
         top: 1rem;
@@ -45,15 +46,16 @@
         border: 0.1rem solid;
         transform: rotate(45deg);
         box-sizing: border-box;
+        z-index: 3;
       }
 
-      &:first-child:after {
+      &.s-left:after {
         right: -0.5rem;
         border-right-color: transparent;
         border-top-color: transparent;
       }
 
-      &:last-child:after {
+      &.s-right:after {
         left: -0.5rem;
         border-left-color: transparent;
         border-bottom-color: transparent;

@@ -75,6 +75,23 @@
     transition-property: opacity;
 
     z-index: -1;
+
+    &.s-center {
+      left: 0;
+      width: 100%;
+      border: 0.1rem solid $secondary_color;
+      box-shadow: 0 0 4px rgba(0,0,0,.4);
+    }
+
+    &.s-left {
+      right: 0rem;
+      transform: translateX(100%);
+    }
+
+    &.s-right {
+      left: 0rem;
+      transform: translateX(-100%);
+    }
   }
 
   & > &__text, & > .list {
