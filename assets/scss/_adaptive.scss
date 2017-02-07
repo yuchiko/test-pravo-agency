@@ -206,4 +206,17 @@
         margin-right: 2rem;
     }
   }
+
+  .wrap {
+
+    &--left {
+      padding: 0;
+    }
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+  }
+
 }
