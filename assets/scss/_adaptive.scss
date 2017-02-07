@@ -71,6 +71,21 @@
       margin-top: 5rem;
     }
   }
+
+  .header {
+
+    &__menu {
+      display: none;
+    }
+
+    &__burger {
+      display: inline-block;
+    }
+
+    &__lang {
+      margin: 0;
+    }
+  }
 }
 
 @media (max-width: $grid-sm-max) {

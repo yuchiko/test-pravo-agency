@@ -6,10 +6,15 @@ jQuery(document).ready(function($){
 		serviceTooltip.call(e.currentTarget);
 	});
 
+	$(document).on('click', '.burger', function(){
+		mobileNav.toggle();
+	});
+
 });
 
 jQuery(window).load(function() {
 	scrollToAnimation();
+	mobileNav.init('.header__menu');
 });
 
 function serviceTooltip() {
@@ -80,11 +85,11 @@ function serviceTooltip() {
 
 function scrollToAnimation() {
 	$('a[href*="#"]:not([href="#"])').click(function () {
+		if ($(this).parents('.mobile-nav').length) { mobileNav.close(); }
 		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 			var target = $(this.hash);
 			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 			if (target.length) {
-				console.log(target.offset().top, $(target).css('margin-top'));
 				$('html, body').animate({
 					scrollTop: target.offset().top
 				}, 1000);
@@ -93,3 +98,23 @@ function scrollToAnimation() {
 		}
 	});
 }
+
+var mobileNav = {
+	mobileClassName: '.mobile-nav',
+	mobileMenuClassName: '.mobile-nav__menu',
+	activeClass: 'open',
+	init: function (mainMenuClassName) {
+		if (!$(this.mobileMenuClassName).children().length) {
+			$(mainMenuClassName).children().clone().prependTo(this.mobileMenuClassName);
+		}
+	},
+	open: function() {
+		$(this.mobileClassName).addClass(this.activeClass);
+	},
+	close: function() {
+		$(this.mobileClassName).removeClass(this.activeClass);
+	},
+	toggle: function() {
+		$(this.mobileClassName).hasClass(this.activeClass) ? this.close() : this.open();
+	}
+};
