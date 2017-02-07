@@ -32,9 +32,16 @@
     }
   }
 
+  &__play {
+    @extend %cam;
+    @include animation(opacity);
+  }
+
+
   .btn {
     margin-top: 2.5rem;
     margin-bottom: 6rem;
   }
+
 
 }

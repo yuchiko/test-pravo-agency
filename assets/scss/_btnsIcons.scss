@@ -42,6 +42,26 @@
 
 	}
 
+	&--play {
+		position: relative;
+		width: 9rem;
+		height: 9rem;
+		padding: 3.65rem;
+		border-radius: 50%;
+		border: none;
+		background: white;
+		cursor: pointer;
+		z-index: 5;
+
+		span {
+			display: none;
+		}
+
+		&:hover svg {
+			stroke: $primary_color;
+		}
+	}
+
 	&--loadmore:hover {
 		svg {
 			animation: 1.8s spin .6s linear infinite;
@@ -92,6 +112,14 @@
 		fill: none;
 		stroke: #fff;
 		stroke-width: 3;
+	}
+	&--play {
+		fill:none;
+		stroke: $secondary_color;
+		stroke-width:3;
+		stroke-linecap:round;
+		stroke-linejoin:round;
+		stroke-miterlimit:10;
 	}
 }
 

@@ -76,6 +76,15 @@
                     </svg>
                     Услуги и цены</a>
             </div>
+            <div class="welcome__play">
+                <button class="modal__link btn--play" data-url="https://www.youtube.com/watch?v=aQn5wiDyUHo?autoplay=1&cc_load_policy=1">
+                    <svg class="svg--play" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 23.8 29.3" style="enable-background:new 0 0 23.8 29.3;" xml:space="preserve">
+                        <polygon class="st0" points="21.5,14.8 3.1,27.2 3.1,2.4 "/>
+                    </svg>
+                    <span>Смотреть видео</span>
+                </button>
+            </div>
         </div>
     </section>
     <section id="services" class="section section--services services">
@@ -324,7 +333,9 @@
                     </div>
                     <div class="testimonials__block testimonials__block_video col-1-3">
                         <div class="testimonials__video">
-                            <img src="assets/img/testimonials-video1.jpg" alt="video screen">
+                            <span class="modal__link" data-url="https://www.youtube.com/watch?v=aQn5wiDyUHo?autoplay=1&cc_load_policy=1">
+                                <img src="assets/img/testimonials-video1.jpg" alt="video screen" >
+                            </span>
                         </div>
                         <div class="testimonials__meta">
                             <p class="testimonials__author-name">Григорий Маленко</p>
@@ -452,6 +463,14 @@
         <p class="footer__copyright">© 2015, <b>Pravo agency</b></p>
     </div>
 </footer>
+<div class="modal modal__video">
+    <iframe width="100%" height="100%" src="" frameborder="0" allowfullscreen=""></iframe>
+    <button class="modal__close">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.11.2.min.js"><\/script>')</script>
