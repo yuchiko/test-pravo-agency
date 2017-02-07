@@ -147,7 +147,7 @@ var modalVideo = {
 		$(this.className).addClass(this.activeClass);
 
 		data_url = modalVideo.youtubeParser(data_url);
-		data_url = "http://www.youtube.com/embed/" + data_url + '?autoplay=1';
+		data_url = "//www.youtube.com/embed/" + data_url + '?autoplay=1';
 
 		$(this.className).prepend($("<iframe />")
 			.attr({ width: '100%', height:'100%', src: data_url, frameborder: 0, "allowfullscreen": "" }));
