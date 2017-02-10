@@ -51,6 +51,7 @@
     .modal__link {
       position: relative;
       display: inline-block;
+      width: 100%;
 
       &:before {
         @extend %cam;

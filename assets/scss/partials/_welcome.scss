@@ -35,6 +35,10 @@
   &__play {
     @extend %cam;
     @include animation(opacity);
+
+    svg {
+      width: 1.7rem;
+    }
   }
 
 

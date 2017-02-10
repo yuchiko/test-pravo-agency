@@ -91,6 +91,35 @@
     padding-bottom: 3rem;
   }
 
+  .btn {
+
+    &__text-mobile {
+      font-size: 1.5rem;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &--inline-mobile {
+      width: auto;
+      height: auto;
+      background: none;
+
+
+      svg {
+        display: inline-block;
+        vertical-align: middle;
+
+        width: 1.7rem;
+        position: static;
+        transform: translate(0);
+      }
+    }
+
+  }
+
+
+
+
   .welcome {
 
     .wrap {
@@ -150,18 +179,12 @@
       font-size: 2rem;
       padding: 0;
 
-
-
-      span, svg {
-        display: inline-block;
-        vertical-align: middle;
-      }
-
       svg {
         width: 2.3rem;
         margin-right: 1rem;
       }
     }
+
   }
 
   .services {
